@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Page 1: Welcome + Video -->
+<div id="welcome" class="screen">
+  <h1>🎂 Happy Birthday my precious 💕 🎂</h1>
+</div>
+
+<div id="videoScreen" class="screen" style="display:none;">
+  <div class="video-wrapper">
+    <video id="birthdayVideo" playsinline>
+      <source src="items/1.mp4" type="video/mp4">
+    </video>
+    <div id="playButton" class="play-button">▶️</div>
+  </div>
+  <div id="countdown" class="countdown">3</div>
+  <div id="errorMsg" class="error"></div>
+</div>
+
+<!-- Page 2: Balloon Mini-Game + Question Cards + KBC -->
+<div id="funScreen" class="screen" style="display:none;">
+  <h2 class="fun-title">🎈 Pop the Balloons! 🎈</h2>
+  <div id="balloonContainer"></div>
+  <div id="balloonMsg" class="balloon-msg"></div>
+  <button id="nextGameBtn" class="next-game-btn" style="display:none;">Next!</button>
+</div>
+
+<div id="questionScreen" class="screen" style="display:none;">
+  <h2 class="question-title">Answer the Question 💌</h2>
+  <div id="questionText" class="question-text"></div>
+  <div class="question-buttons">
+    <button id="yesBtn" class="question-btn">Yes ✅</button>
+    <button id="noBtn" class="question-btn">No ❌</button>
+  </div>
+</div>
+
+<div id="kbcScreen" class="screen" style="display:none;">
+  <h2 class="question-title">🎮 Super Fun Question 🎮</h2>
+  <div id="kbcQuestion" class="question-text"></div>
+  <div class="kbc-options">
+    <button class="kbc-btn" id="option1"></button>
+    <button class="kbc-btn" id="option2"></button>
+    <button class="kbc-btn" id="option3"></button>
+    <button class="kbc-btn" id="option4"></button>
+  </div>
+</div>
+
+<!-- Final Screen -->
+<div id="finalScreen" class="screen" style="display:none;">
+  <h1>🎉 Hope you loved your birthday fun 💖</h1>
+  <p>I love you and once again, Happy Birthday! 💕</p>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

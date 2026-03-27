@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0c1a3e, #ff5e1a);
+  color: white;
+}
+
+.screen {
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  padding: 2rem;
+  border-radius: 25px;
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  color: #FFE6B0;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+h2.fun-title, .question-title {
+  font-size: 1.8rem;
+  color: #ffdd59;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+video {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+
+.video-wrapper {
+  position: relative;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.countdown {
+  font-size: 4rem;
+  color: #fffa65;
+  margin-top: 1rem;
+  display: none;
+}
+
+.error {
+  color: #ffaa66;
+  margin-top: 1rem;
+}
+
+#balloonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 1rem;
+}
+
+.balloon {
+  width: 60px;
+  height: 80px;
+  background: radial-gradient(circle at 30% 30%, #ff4d4d, #c70039);
+  border-radius: 50% 50% 50% 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white;
+  user-select: none;
+  position: relative;
+}
+
+.balloon-msg {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  min-height: 30px;
+  color: #fffa65;
+}
+
+.next-game-btn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  background: #ff3e2e;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+}
+
+.question-text {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ffd6a5;
+}
+
+.question-buttons, .kbc-options {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.question-btn, .kbc-btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #ff3e2e;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.question-btn:hover, .kbc-btn:hover {
+  transform: scale(1.1);
+}
